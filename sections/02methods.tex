@@ -20,7 +20,7 @@
 
 \subsection{Laser system}
 
-    A Litron LPY ST 7875-10 2HG laser was used to peen the samples. The Litron laser is a pulsed Q-switched Nd:YAG laser with an oscillator-amplifier configuration with stable resonators. The system generates pulses tens of nanoseconds in duration at \SI{532}{\nano\meter} (or \SI{1064}{\nano\meter}) with a pulse energy up to \SI{1.5}{\joule }(@\SI{532}{\nano\meter}) at \SI{10}{\hertz} repetition rate. The critical parameters of this system are summarized in Table~~\ref{tab:litronparameters}~\cite{litron}. The temporal shape of the Litron laser pulse measured by an InGaAs EOT ET-3000EXT PIN detector, and the profile of the laser pulse at \SI{36}{\milli\joule} recorded by an Allied Vision Manta G-210B ASG GigE near field camera are shown in Figure \ref{fig:profile}. The FWHM of the laser pulse is \SI{18.6}{\ns}.
+    A Litron LPY ST 7875-10 2HG laser was used to peen the samples. The Litron laser is a pulsed Q-switched Nd:YAG laser with an oscillator-amplifier configuration with stable resonators. The system generates pulses tens of nanoseconds in duration at \SI{532}{\nano\meter} (or \SI{1064}{\nano\meter}) with a pulse energy up to \SI{1.5}{\joule } (@\SI{532}{\nano\meter}) at \SI{10}{\hertz} repetition rate. The critical parameters of this system are summarized in Table~~\ref{tab:litronparameters}~\cite{litron}. The temporal shape of the Litron laser pulse measured by an InGaAs EOT ET-3000EXT PIN detector, and the profile of the laser pulse at \SI{36}{\milli\joule} recorded by an Allied Vision Manta G-210B ASG GigE near field camera are shown in Figure \ref{fig:profile}. The FWHM of the laser pulse is \SI{18.6}{\ns}.
 
 
 
@@ -72,11 +72,11 @@
         \begin{center}
 
         %\begin{minipage}{.4\textwidth}
-        \includegraphics[width=0.27\textwidth,valign=c]{img/temporal_profile_new.png}
+        \includegraphics[width=0.27\textwidth]{img/temporal_profile_new.png}
         \label{fig:profile}
         %\end{minipage}
         %\begin{minipage}{.4\textwidth}
-        \includegraphics[width=0.15\textwidth,valign=c]{img/C2-v3_36_mJ_scale.png}
+        \includegraphics[width=0.15\textwidth]{img/C2-v3_36_mJ_scale.png}
         \label{fig:profile}
         %\end{minipage}%
 
@@ -91,9 +91,69 @@
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % EXPERIMENTAL SETUP 
 
 \subsection{Experimental setup}
 
+    The experimental setup is shown in Figure \ref{fig:optical_setup}. The process was performed at \SI{532}{\nano\meter} with samples submerged in water. The laser beam passed through a Faraday isolator, a vacuumed telescope and was redirected by dual-band laser mirrors with anti-reflective coating. The setup was accompanied with diagnostics - energy meter, near field and far field camera, and photodiode. The beam was focused onto the sample using a plano-convex lens with a 300 mm focal length mounted on one side of an acrylic tank. The sample was positioned using a FANUC~M-20iB/35B 6-axis industrial robotic arm and submerged into tap water at a temperature of \SI{18}{\celsius}. The acoustic signal emitted during the LSP process was recorded by a Xarion Eta250 Ultra optical microphone.
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % OPTICAL SETUP SCHEMATICS
+
+
+        \begin{figure}[h]      
+        \includegraphics[width=0.45\textwidth]{img/optical setup.png}
+
+        \caption{Laser shock peening experimental setup schematics}
+        \label{fig:optical_setup}
+        \end{figure}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % RESIDUAL STRESS MEASUREMENT
+
+\subsection{Residual stress measurement}
+
+The residual stress measurements were carried out using the hole drilling technique  and X-ray diffraction (XRD) using conventional X-ray diffraction \(\sin ^2(\Psi )\) technique. The hole drilling system PRISM by Stresstech company was used to gain depth-resolved residual stress profiles. The hole drilling method is based on the measurements of surface distortion caused by the drilling using electronic speckle pattern interferometry. The drill diameter was \SI{3.2}{\mm}, enabling measurements to \SI{1.5}{\mm} in depth.  A Rigaku XRD Automate 2 instrument and electrolytic removal were used to analyze residual stresses in two orthogonal directions. XRD residual stress measurement parameters are provided in Table~\ref{tab:xrdparameters}.
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % XRD parameters
+    \begin{center}  
+
+    \begin{threeparttable}
+        \centering
+        \begin{tabular}{|p{0.4\linewidth} | p{0.6\linewidth}|} 
+        \hline
+            \textbf{Item} & \textbf{Description} \\ [0.5ex] 
+        \hline
+        Detector & PSSD(Position sensitive scintillation detector)  \\ 
+        \hline
+            Radiation & MnK\(\alpha_1\)(\lambda = 2.1 )  \\
+        \hline
+            Tilt Angles [\degree] & \textless 0.5  \\ 
+        \hline
+            Aperture size(diameter) [mm] & 1 \\
+        \hline
+            Plane(Bragg's Angle) [\degree]  & \{311\} set of planes.Bragg's angle:152\degree \\
+
+        \hline
+        \end{tabular}
+
+        \caption[Litron~LPY~ST~7875-10~2HG parameters]{Parameters for XRD residual stress measurement}
+
+        
+       
+    \end{threeparttable}
+
+    \label{tab:xrdparameters}
+    \end{center}
 
 \subsection{Acoustic emission}
 
